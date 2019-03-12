@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     nyc3.mynet-513.com. root.mynet-513.com. (
+@       IN      SOA     nyc3.my-site.com. root.my-site.com. (
                   3       ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -7,11 +7,10 @@ $TTL    604800
              604800 )   ; Negative Cache TTL
 ;
 ; name servers - NS records
-     IN      NS      ns1.mynet-513.com.
+     IN      NS      ns1.my-site.com.
 
 ; name servers - A records
-ns1.mynet-513.com.          IN      A       192.168.100.11
-
+ns1.mysite.com.             IN      A       192.168.100.11
 ansible-mgn                 IN      A       192.168.100.11
 server-01                   IN      A       192.168.100.80
 server-02                   IN      A       192.168.100.81
@@ -20,4 +19,5 @@ server-04                   IN      A       192.168.100.70
 www                         IN      CNAME   server-01
 web-01                      IN      CNAME   server-02
 web-02                      IN      CNAME   server-03
+
 

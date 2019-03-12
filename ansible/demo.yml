@@ -59,6 +59,7 @@
     loop:
          - { source: 'template/db.mynet-513.com.j2', destination: '/etc/named/zones/db.mynet-513.com' }
          - { source: 'template/db.192.168.100.j2', destination: '/etc/named/zones/db.192.168.100' }
+         - { source: 'template/db.my-site.com.j2', destination: '/etc/named/zones/db.my-site.com' }
     when: ansible_connection == 'local'
 
  
